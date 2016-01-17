@@ -21,11 +21,6 @@ namespace test_ExcelWorkbook1
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             uint registerDec = UInt32.Parse(Register_textBox1.Text+Register_textBox2.Text, System.Globalization.NumberStyles.HexNumber);
