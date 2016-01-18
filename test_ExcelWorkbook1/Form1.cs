@@ -23,11 +23,11 @@ namespace test_ExcelWorkbook1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            uint registerDec = UInt32.Parse(Register_textBox1.Text+Register_textBox2.Text, System.Globalization.NumberStyles.HexNumber);
-            uint busDec= UInt32.Parse(Bus_textBox.Text, System.Globalization.NumberStyles.HexNumber);
-            uint deviceDec = UInt32.Parse(Devicd_textBox.Text, System.Globalization.NumberStyles.HexNumber);
-            uint functionDec = UInt32.Parse(Function_textBox.Text, System.Globalization.NumberStyles.HexNumber);
-            uint offsetDec = UInt32.Parse(Offset_textBox.Text, System.Globalization.NumberStyles.HexNumber);
+            uint registerDec = UInt32.Parse(txtRegister1.Text+txtRegister2.Text, System.Globalization.NumberStyles.HexNumber);
+            uint busDec= UInt32.Parse(txtBus.Text, System.Globalization.NumberStyles.HexNumber);
+            uint deviceDec = UInt32.Parse(txtDevice.Text, System.Globalization.NumberStyles.HexNumber);
+            uint functionDec = UInt32.Parse(txtFunction.Text, System.Globalization.NumberStyles.HexNumber);
+            uint offsetDec = UInt32.Parse(txtOffset.Text, System.Globalization.NumberStyles.HexNumber);
 
             uint addressDec = (busDec * busWeight) + (deviceDec * deviceWeight) + (functionDec * functionWeight) + offsetDec + registerDec;
             string addressHex = Convert.ToString(addressDec, 16);
@@ -46,11 +46,11 @@ namespace test_ExcelWorkbook1
 
         private void Register_button_Click(object sender, EventArgs e)
         {
-            uint busDec = UInt32.Parse(Bus_textBox.Text, System.Globalization.NumberStyles.HexNumber);
-            uint deviceDec = UInt32.Parse(Devicd_textBox.Text, System.Globalization.NumberStyles.HexNumber);
-            uint functionDec = UInt32.Parse(Function_textBox.Text, System.Globalization.NumberStyles.HexNumber);
-            uint offsetDec = UInt32.Parse(Offset_textBox.Text, System.Globalization.NumberStyles.HexNumber);
-            uint addressDec = UInt32.Parse(address_textBox.Text, System.Globalization.NumberStyles.HexNumber);
+            uint busDec = UInt32.Parse(txtBus.Text, System.Globalization.NumberStyles.HexNumber);
+            uint deviceDec = UInt32.Parse(txtDevice.Text, System.Globalization.NumberStyles.HexNumber);
+            uint functionDec = UInt32.Parse(txtFunction.Text, System.Globalization.NumberStyles.HexNumber);
+            uint offsetDec = UInt32.Parse(txtOffset.Text, System.Globalization.NumberStyles.HexNumber);
+            uint addressDec = UInt32.Parse(txtAddress.Text, System.Globalization.NumberStyles.HexNumber);
 
             uint registerDec = addressDec - ((busDec * busWeight) + (deviceDec * deviceWeight) + (functionDec * functionWeight) + offsetDec);
             string registerHex = Convert.ToString(registerDec, 16);

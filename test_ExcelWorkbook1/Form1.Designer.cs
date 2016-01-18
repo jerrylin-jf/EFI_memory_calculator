@@ -28,122 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Register_textBox1 = new System.Windows.Forms.TextBox();
-            this.Bus_textBox = new System.Windows.Forms.TextBox();
-            this.Devicd_textBox = new System.Windows.Forms.TextBox();
-            this.Offset_textBox = new System.Windows.Forms.TextBox();
-            this.Functino_label = new System.Windows.Forms.Label();
-            this.Function_textBox = new System.Windows.Forms.TextBox();
-            this.Register_textBox2 = new System.Windows.Forms.TextBox();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.lblRegister = new System.Windows.Forms.Label();
+            this.lblBus = new System.Windows.Forms.Label();
+            this.lblDevice = new System.Windows.Forms.Label();
+            this.lblOffset = new System.Windows.Forms.Label();
+            this.txtRegister1 = new System.Windows.Forms.TextBox();
+            this.txtBus = new System.Windows.Forms.TextBox();
+            this.txtDevice = new System.Windows.Forms.TextBox();
+            this.txtOffset = new System.Windows.Forms.TextBox();
+            this.lblFunction = new System.Windows.Forms.Label();
+            this.txtFunction = new System.Windows.Forms.TextBox();
+            this.txtRegister2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.Address_label = new System.Windows.Forms.Label();
-            this.address_textBox = new System.Windows.Forms.TextBox();
-            this.Register_button = new System.Windows.Forms.Button();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCalculate
             // 
-            this.button1.Location = new System.Drawing.Point(33, 158);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Convert";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCalculate.Location = new System.Drawing.Point(33, 158);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(75, 23);
+            this.btnCalculate.TabIndex = 0;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // lblRegister
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Register:";
+            this.lblRegister.AutoSize = true;
+            this.lblRegister.Location = new System.Drawing.Point(17, 26);
+            this.lblRegister.Name = "lblRegister";
+            this.lblRegister.Size = new System.Drawing.Size(49, 13);
+            this.lblRegister.TabIndex = 1;
+            this.lblRegister.Text = "Register:";
             // 
-            // label2
+            // lblBus
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Bus:";
+            this.lblBus.AutoSize = true;
+            this.lblBus.Location = new System.Drawing.Point(17, 58);
+            this.lblBus.Name = "lblBus";
+            this.lblBus.Size = new System.Drawing.Size(28, 13);
+            this.lblBus.TabIndex = 2;
+            this.lblBus.Text = "Bus:";
             // 
-            // label3
+            // lblDevice
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(96, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Device:";
+            this.lblDevice.AutoSize = true;
+            this.lblDevice.Location = new System.Drawing.Point(96, 58);
+            this.lblDevice.Name = "lblDevice";
+            this.lblDevice.Size = new System.Drawing.Size(44, 13);
+            this.lblDevice.TabIndex = 3;
+            this.lblDevice.Text = "Device:";
             // 
-            // label4
+            // lblOffset
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 90);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Offset:";
+            this.lblOffset.AutoSize = true;
+            this.lblOffset.Location = new System.Drawing.Point(17, 90);
+            this.lblOffset.Name = "lblOffset";
+            this.lblOffset.Size = new System.Drawing.Size(38, 13);
+            this.lblOffset.TabIndex = 4;
+            this.lblOffset.Text = "Offset:";
             // 
-            // Register_textBox1
+            // txtRegister1
             // 
-            this.Register_textBox1.Location = new System.Drawing.Point(72, 23);
-            this.Register_textBox1.MaxLength = 4;
-            this.Register_textBox1.Name = "Register_textBox1";
-            this.Register_textBox1.Size = new System.Drawing.Size(63, 20);
-            this.Register_textBox1.TabIndex = 5;
+            this.txtRegister1.Location = new System.Drawing.Point(72, 23);
+            this.txtRegister1.MaxLength = 4;
+            this.txtRegister1.Name = "txtRegister1";
+            this.txtRegister1.Size = new System.Drawing.Size(63, 20);
+            this.txtRegister1.TabIndex = 5;
             // 
-            // Bus_textBox
+            // txtBus
             // 
-            this.Bus_textBox.Location = new System.Drawing.Point(47, 55);
-            this.Bus_textBox.Name = "Bus_textBox";
-            this.Bus_textBox.Size = new System.Drawing.Size(43, 20);
-            this.Bus_textBox.TabIndex = 7;
+            this.txtBus.Location = new System.Drawing.Point(47, 55);
+            this.txtBus.Name = "txtBus";
+            this.txtBus.Size = new System.Drawing.Size(43, 20);
+            this.txtBus.TabIndex = 7;
             // 
-            // Devicd_textBox
+            // txtDevice
             // 
-            this.Devicd_textBox.Location = new System.Drawing.Point(141, 55);
-            this.Devicd_textBox.Name = "Devicd_textBox";
-            this.Devicd_textBox.Size = new System.Drawing.Size(38, 20);
-            this.Devicd_textBox.TabIndex = 8;
+            this.txtDevice.Location = new System.Drawing.Point(141, 55);
+            this.txtDevice.Name = "txtDevice";
+            this.txtDevice.Size = new System.Drawing.Size(38, 20);
+            this.txtDevice.TabIndex = 8;
             // 
-            // Offset_textBox
+            // txtOffset
             // 
-            this.Offset_textBox.Location = new System.Drawing.Point(58, 87);
-            this.Offset_textBox.Name = "Offset_textBox";
-            this.Offset_textBox.Size = new System.Drawing.Size(39, 20);
-            this.Offset_textBox.TabIndex = 11;
+            this.txtOffset.Location = new System.Drawing.Point(58, 87);
+            this.txtOffset.Name = "txtOffset";
+            this.txtOffset.Size = new System.Drawing.Size(39, 20);
+            this.txtOffset.TabIndex = 11;
             // 
-            // Functino_label
+            // lblFunction
             // 
-            this.Functino_label.AutoSize = true;
-            this.Functino_label.Location = new System.Drawing.Point(185, 58);
-            this.Functino_label.Name = "Functino_label";
-            this.Functino_label.Size = new System.Drawing.Size(51, 13);
-            this.Functino_label.TabIndex = 9;
-            this.Functino_label.Text = "Function:";
+            this.lblFunction.AutoSize = true;
+            this.lblFunction.Location = new System.Drawing.Point(185, 58);
+            this.lblFunction.Name = "lblFunction";
+            this.lblFunction.Size = new System.Drawing.Size(51, 13);
+            this.lblFunction.TabIndex = 9;
+            this.lblFunction.Text = "Function:";
             // 
-            // Function_textBox
+            // txtFunction
             // 
-            this.Function_textBox.Location = new System.Drawing.Point(237, 55);
-            this.Function_textBox.Name = "Function_textBox";
-            this.Function_textBox.Size = new System.Drawing.Size(43, 20);
-            this.Function_textBox.TabIndex = 10;
+            this.txtFunction.Location = new System.Drawing.Point(237, 55);
+            this.txtFunction.Name = "txtFunction";
+            this.txtFunction.Size = new System.Drawing.Size(43, 20);
+            this.txtFunction.TabIndex = 10;
             // 
-            // Register_textBox2
+            // txtRegister2
             // 
-            this.Register_textBox2.Location = new System.Drawing.Point(141, 23);
-            this.Register_textBox2.MaxLength = 4;
-            this.Register_textBox2.Name = "Register_textBox2";
-            this.Register_textBox2.Size = new System.Drawing.Size(61, 20);
-            this.Register_textBox2.TabIndex = 6;
+            this.txtRegister2.Location = new System.Drawing.Point(141, 23);
+            this.txtRegister2.MaxLength = 4;
+            this.txtRegister2.Name = "txtRegister2";
+            this.txtRegister2.Size = new System.Drawing.Size(61, 20);
+            this.txtRegister2.TabIndex = 6;
             // 
             // label5
             // 
@@ -153,53 +153,53 @@
             this.label5.Size = new System.Drawing.Size(0, 13);
             this.label5.TabIndex = 12;
             // 
-            // Address_label
+            // lblAddress
             // 
-            this.Address_label.AutoSize = true;
-            this.Address_label.Location = new System.Drawing.Point(17, 119);
-            this.Address_label.Name = "Address_label";
-            this.Address_label.Size = new System.Drawing.Size(48, 13);
-            this.Address_label.TabIndex = 13;
-            this.Address_label.Text = "Address:";
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Location = new System.Drawing.Point(17, 119);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(48, 13);
+            this.lblAddress.TabIndex = 13;
+            this.lblAddress.Text = "Address:";
             // 
-            // address_textBox
+            // txtAddress
             // 
-            this.address_textBox.Location = new System.Drawing.Point(67, 116);
-            this.address_textBox.Name = "address_textBox";
-            this.address_textBox.Size = new System.Drawing.Size(100, 20);
-            this.address_textBox.TabIndex = 14;
+            this.txtAddress.Location = new System.Drawing.Point(67, 116);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(100, 20);
+            this.txtAddress.TabIndex = 14;
             // 
-            // Register_button
+            // btnRegister
             // 
-            this.Register_button.Location = new System.Drawing.Point(161, 158);
-            this.Register_button.Name = "Register_button";
-            this.Register_button.Size = new System.Drawing.Size(75, 23);
-            this.Register_button.TabIndex = 15;
-            this.Register_button.Text = "Register";
-            this.Register_button.UseVisualStyleBackColor = true;
-            this.Register_button.Click += new System.EventHandler(this.Register_button_Click);
+            this.btnRegister.Location = new System.Drawing.Point(161, 158);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(75, 23);
+            this.btnRegister.TabIndex = 15;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.Register_button_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.Register_button);
-            this.Controls.Add(this.address_textBox);
-            this.Controls.Add(this.Address_label);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.Register_textBox2);
-            this.Controls.Add(this.Function_textBox);
-            this.Controls.Add(this.Functino_label);
-            this.Controls.Add(this.Offset_textBox);
-            this.Controls.Add(this.Devicd_textBox);
-            this.Controls.Add(this.Bus_textBox);
-            this.Controls.Add(this.Register_textBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtRegister2);
+            this.Controls.Add(this.txtFunction);
+            this.Controls.Add(this.lblFunction);
+            this.Controls.Add(this.txtOffset);
+            this.Controls.Add(this.txtDevice);
+            this.Controls.Add(this.txtBus);
+            this.Controls.Add(this.txtRegister1);
+            this.Controls.Add(this.lblOffset);
+            this.Controls.Add(this.lblDevice);
+            this.Controls.Add(this.lblBus);
+            this.Controls.Add(this.lblRegister);
+            this.Controls.Add(this.btnCalculate);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -209,21 +209,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Register_textBox1;
-        private System.Windows.Forms.TextBox Bus_textBox;
-        private System.Windows.Forms.TextBox Devicd_textBox;
-        private System.Windows.Forms.TextBox Offset_textBox;
-        private System.Windows.Forms.Label Functino_label;
-        private System.Windows.Forms.TextBox Function_textBox;
-        private System.Windows.Forms.TextBox Register_textBox2;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Label lblBus;
+        private System.Windows.Forms.Label lblDevice;
+        private System.Windows.Forms.Label lblOffset;
+        private System.Windows.Forms.Label lblRegister;
+        private System.Windows.Forms.TextBox txtRegister1;
+        private System.Windows.Forms.TextBox txtBus;
+        private System.Windows.Forms.TextBox txtDevice;
+        private System.Windows.Forms.TextBox txtOffset;
+        private System.Windows.Forms.Label lblFunction;
+        private System.Windows.Forms.TextBox txtFunction;
+        private System.Windows.Forms.TextBox txtRegister2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label Address_label;
-        private System.Windows.Forms.TextBox address_textBox;
-        private System.Windows.Forms.Button Register_button;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.Button btnRegister;
     }
 }
