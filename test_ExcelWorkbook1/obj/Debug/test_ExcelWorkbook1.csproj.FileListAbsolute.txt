@@ -46,3 +46,4 @@ C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj
 C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.csproj.GenerateResource.Cache
 C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.dll
 C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.pdb
+C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.Ribbon1.resources
