@@ -34,6 +34,8 @@
             this.lblSerialPort = new System.Windows.Forms.Label();
             this.lblSpeed = new System.Windows.Forms.Label();
             this.cboSpeed = new System.Windows.Forms.ComboBox();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cboCOMlist
@@ -70,11 +72,33 @@
             this.cboSpeed.Size = new System.Drawing.Size(121, 21);
             this.cboSpeed.TabIndex = 3;
             // 
+            // btnConnect
+            // 
+            this.btnConnect.Location = new System.Drawing.Point(30, 195);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(75, 23);
+            this.btnConnect.TabIndex = 4;
+            this.btnConnect.Text = "Connect";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(157, 195);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 5;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // frmCOM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.cboSpeed);
             this.Controls.Add(this.lblSpeed);
             this.Controls.Add(this.lblSerialPort);
@@ -93,5 +117,7 @@
         private System.Windows.Forms.Label lblSerialPort;
         private System.Windows.Forms.Label lblSpeed;
         private System.Windows.Forms.ComboBox cboSpeed;
+        private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnClose;
     }
 }

@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 using Excel = Microsoft.Office.Interop.Excel;
+using System;
+using System.Collections.Generic;
 
 namespace test_ExcelWorkbook1
 {
@@ -16,13 +18,34 @@ namespace test_ExcelWorkbook1
     {
         public frmCOM()
         {
-            InitializeComponent();
+            InitializeComponent();        
             this.cboCOMlist.Items.AddRange(SerialPort.GetPortNames());
-            Excel.Worksheet wks = (Excel.Worksheet)Globals.ThisWorkbook.ActiveSheet;
-            COMserialPort = new SerialPort("COM17", 115200);
+            this.cboSpeed.Items.AddRange(new string[] { "1200", "2400", "4800", "9600", "19200", "38400", "57600", "115200", "460800", "921600"});
+        }
+
+        List<SerialPort> listSerial = new List<SerialPort>();
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            string strCOMport = this.cboCOMlist.SelectedItem.ToString();
+            string strSpeed = this.cboSpeed.SelectedItem.ToString();
+            COMserialPort = new SerialPort(strCOMport, Int32.Parse(strSpeed));
             COMserialPort.Open();
-            wks.Range["D1"].Value = COMserialPort.IsOpen.ToString();
-            COMserialPort.Close();
+            listSerial.Add(COMserialPort);
+
+            Byte[] message = Encoding.Unicode.GetBytes(strCOMport + strSpeed + " Hello world" );
+            COMserialPort.Write(message, 0, message.Length);
+           
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            foreach (SerialPort temp in listSerial)
+            {
+                lblSerialPort.Text = COMserialPort.IsOpen.ToString();
+                temp.Close();
+            }
+            listSerial.Clear();
+
         }
     }
 }
