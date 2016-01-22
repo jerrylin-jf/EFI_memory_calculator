@@ -8,15 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
+using System.IO.Ports;
 
 namespace test_ExcelWorkbook1
 {
-    public partial class Form1 : Form
+    public partial class frmCalcuateMemory : Form
     {
         public const int busWeight = 1048576;
         public const int deviceWeight = 32768;
         public const int functionWeight = 4096;
-        public Form1()
+        public frmCalcuateMemory()
         {
             InitializeComponent();
         }
@@ -64,6 +65,16 @@ namespace test_ExcelWorkbook1
             wks.Range["A5"].Value = offsetDec;
             wks.Range["A6"].Value = addressDec;
             wks.Range["A7"].Value = registerHex;
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }

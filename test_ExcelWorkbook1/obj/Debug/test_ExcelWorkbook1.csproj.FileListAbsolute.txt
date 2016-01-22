@@ -41,9 +41,10 @@ C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\bin
 C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
 C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.xml
 C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.csprojResolveAssemblyReference.cache
-C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.Form1.resources
 C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.Properties.Resources.resources
 C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.csproj.GenerateResource.Cache
 C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.dll
 C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.pdb
 C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.Ribbon1.resources
+C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.frmCalcuateMemory.resources
+C:\Users\jianfali\Documents\GitHub\EFI_memory_calculator\test_ExcelWorkbook1\obj\Debug\test_ExcelWorkbook1.frmCOM.resources

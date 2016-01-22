@@ -16,7 +16,7 @@ namespace test_ExcelWorkbook1
     {
         private void ThisWorkbook_Startup(object sender, System.EventArgs e)
         {
-            Form form = new Form1();
+            Form form = new frmCalcuateMemory();
             form.Show();
         }
 

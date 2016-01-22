@@ -1,6 +1,6 @@
 ﻿namespace test_ExcelWorkbook1
 {
-    partial class Form1
+    partial class frmCalcuateMemory
     {
         /// <summary>
         /// Required designer variable.
@@ -179,7 +179,7 @@
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.Register_button_Click);
             // 
-            // Form1
+            // frmCalcuateMemory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,8 +200,9 @@
             this.Controls.Add(this.lblBus);
             this.Controls.Add(this.lblRegister);
             this.Controls.Add(this.btnCalculate);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmCalcuateMemory";
+            this.Text = "CalcuateMemory";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

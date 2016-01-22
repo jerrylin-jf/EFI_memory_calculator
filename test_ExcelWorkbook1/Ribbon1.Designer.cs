@@ -36,31 +36,44 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tab1 = this.Factory.CreateRibbonTab();
-            this.group1 = this.Factory.CreateRibbonGroup();
-            this.btnConnectSerial = this.Factory.CreateRibbonButton();
+            this.grpCOM = this.Factory.CreateRibbonGroup();
+            this.btnCOM1 = this.Factory.CreateRibbonButton();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.btnConnectCOM = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
-            this.group1.SuspendLayout();
+            this.grpCOM.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
             // 
             this.tab1.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
-            this.tab1.Groups.Add(this.group1);
+            this.tab1.Groups.Add(this.grpCOM);
             this.tab1.Label = "TabAddIns";
             this.tab1.Name = "tab1";
             // 
-            // group1
+            // grpCOM
             // 
-            this.group1.Items.Add(this.btnConnectSerial);
-            this.group1.Label = "group1";
-            this.group1.Name = "group1";
+            this.grpCOM.Items.Add(this.btnCOM1);
+            this.grpCOM.Items.Add(this.btnConnectCOM);
+            this.grpCOM.Label = "COM";
+            this.grpCOM.Name = "grpCOM";
             // 
-            // btnConnectSerial
+            // btnCOM1
             // 
-            this.btnConnectSerial.Label = "Connect Serial Port";
-            this.btnConnectSerial.Name = "btnConnectSerial";
-            this.btnConnectSerial.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnConnectSerial_Click);
+            this.btnCOM1.Label = "COM1";
+            this.btnCOM1.Name = "btnCOM1";
+            this.btnCOM1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnConnectSerial_Click);
+            // 
+            // serialPort1
+            // 
+            this.serialPort1.BaudRate = 115200;
+            this.serialPort1.PortName = "COM17";
+            // 
+            // btnConnectCOM
+            // 
+            this.btnConnectCOM.Label = "Serial";
+            this.btnConnectCOM.Name = "btnConnectCOM";
+            this.btnConnectCOM.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnConnectCOM_Click);
             // 
             // Ribbon1
             // 
@@ -70,8 +83,8 @@
             this.Load += new Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler(this.Ribbon1_Load);
             this.tab1.ResumeLayout(false);
             this.tab1.PerformLayout();
-            this.group1.ResumeLayout(false);
-            this.group1.PerformLayout();
+            this.grpCOM.ResumeLayout(false);
+            this.grpCOM.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -79,9 +92,10 @@
         #endregion
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnConnectSerial;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup grpCOM;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnCOM1;
         private System.IO.Ports.SerialPort serialPort1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnConnectCOM;
     }
 
     partial class ThisRibbonCollection
@@ -91,4 +105,5 @@
             get { return this.GetRibbon<Ribbon1>(); }
         }
     }
+
 }
