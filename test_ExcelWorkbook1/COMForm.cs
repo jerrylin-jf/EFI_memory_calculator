@@ -29,11 +29,12 @@ namespace test_ExcelWorkbook1
             string strCOMport = this.cboCOMlist.SelectedItem.ToString();
             string strSpeed = this.cboSpeed.SelectedItem.ToString();
             COMserialPort = new SerialPort(strCOMport, Int32.Parse(strSpeed));
-            COMserialPort.Open();
+            if (!COMserialPort.IsOpen)
+            {
+                COMserialPort.Open();
+            }
+            
             listSerial.Add(COMserialPort);
-
-            Byte[] message = Encoding.Unicode.GetBytes(strCOMport + strSpeed + " Hello world" );
-            COMserialPort.Write(message, 0, message.Length);
            
         }
 
@@ -46,6 +47,13 @@ namespace test_ExcelWorkbook1
             }
             listSerial.Clear();
 
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            Byte[] message = Encoding.Unicode.GetBytes(txtSendCommand.Text + "\n");
+            COMserialPort.Write(message, 0, message.Length);
+            txtSendCommand.Clear();
         }
     }
 }
