@@ -29,113 +29,216 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.cboCOMlist = new System.Windows.Forms.ComboBox();
-            this.COMserialPort = new System.IO.Ports.SerialPort(this.components);
-            this.lblSerialPort = new System.Windows.Forms.Label();
-            this.lblSpeed = new System.Windows.Forms.Label();
-            this.cboSpeed = new System.Windows.Forms.ComboBox();
-            this.btnConnect = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.txtSendCommand = new System.Windows.Forms.TextBox();
-            this.btnSend = new System.Windows.Forms.Button();
-            this.txtReceive = new System.Windows.Forms.TextBox();
+            this.cboCOMList1 = new System.Windows.Forms.ComboBox();
+            this.COMSerialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.lblSerialPort1 = new System.Windows.Forms.Label();
+            this.lblSpeed1 = new System.Windows.Forms.Label();
+            this.cboSpeed1 = new System.Windows.Forms.ComboBox();
+            this.btnSerialConnect1 = new System.Windows.Forms.Button();
+            this.btnSerialClose1 = new System.Windows.Forms.Button();
+            this.txtSendCommand1 = new System.Windows.Forms.TextBox();
+            this.btnSend1 = new System.Windows.Forms.Button();
+            this.txtReceive1 = new System.Windows.Forms.TextBox();
+            this.txtReceive2 = new System.Windows.Forms.TextBox();
+            this.btnSend2 = new System.Windows.Forms.Button();
+            this.txtSendCommand2 = new System.Windows.Forms.TextBox();
+            this.btnSerialClose = new System.Windows.Forms.Button();
+            this.btnSerialConnect2 = new System.Windows.Forms.Button();
+            this.cboSpeed2 = new System.Windows.Forms.ComboBox();
+            this.lblSpeed12 = new System.Windows.Forms.Label();
+            this.lblSerialPort2 = new System.Windows.Forms.Label();
+            this.cboCOMList2 = new System.Windows.Forms.ComboBox();
+            this.COMSerialPort2 = new System.IO.Ports.SerialPort(this.components);
             this.SuspendLayout();
             // 
-            // cboCOMlist
+            // cboCOMList1
             // 
-            this.cboCOMlist.FormattingEnabled = true;
-            this.cboCOMlist.Location = new System.Drawing.Point(97, 29);
-            this.cboCOMlist.Name = "cboCOMlist";
-            this.cboCOMlist.Size = new System.Drawing.Size(121, 21);
-            this.cboCOMlist.TabIndex = 0;
+            this.cboCOMList1.FormattingEnabled = true;
+            this.cboCOMList1.Location = new System.Drawing.Point(128, 21);
+            this.cboCOMList1.Name = "cboCOMList1";
+            this.cboCOMList1.Size = new System.Drawing.Size(121, 21);
+            this.cboCOMList1.TabIndex = 0;
             // 
-            // lblSerialPort
+            // lblSerialPort1
             // 
-            this.lblSerialPort.AutoSize = true;
-            this.lblSerialPort.Location = new System.Drawing.Point(27, 32);
-            this.lblSerialPort.Name = "lblSerialPort";
-            this.lblSerialPort.Size = new System.Drawing.Size(55, 13);
-            this.lblSerialPort.TabIndex = 1;
-            this.lblSerialPort.Text = "Serial Port";
+            this.lblSerialPort1.AutoSize = true;
+            this.lblSerialPort1.Location = new System.Drawing.Point(58, 24);
+            this.lblSerialPort1.Name = "lblSerialPort1";
+            this.lblSerialPort1.Size = new System.Drawing.Size(55, 13);
+            this.lblSerialPort1.TabIndex = 1;
+            this.lblSerialPort1.Text = "Serial Port";
             // 
-            // lblSpeed
+            // lblSpeed1
             // 
-            this.lblSpeed.AutoSize = true;
-            this.lblSpeed.Location = new System.Drawing.Point(271, 32);
-            this.lblSpeed.Name = "lblSpeed";
-            this.lblSpeed.Size = new System.Drawing.Size(38, 13);
-            this.lblSpeed.TabIndex = 2;
-            this.lblSpeed.Text = "Speed";
+            this.lblSpeed1.AutoSize = true;
+            this.lblSpeed1.Location = new System.Drawing.Point(58, 56);
+            this.lblSpeed1.Name = "lblSpeed1";
+            this.lblSpeed1.Size = new System.Drawing.Size(38, 13);
+            this.lblSpeed1.TabIndex = 2;
+            this.lblSpeed1.Text = "Speed";
             // 
-            // cboSpeed
+            // cboSpeed1
             // 
-            this.cboSpeed.FormattingEnabled = true;
-            this.cboSpeed.Location = new System.Drawing.Point(315, 29);
-            this.cboSpeed.Name = "cboSpeed";
-            this.cboSpeed.Size = new System.Drawing.Size(121, 21);
-            this.cboSpeed.TabIndex = 3;
+            this.cboSpeed1.FormattingEnabled = true;
+            this.cboSpeed1.Location = new System.Drawing.Point(128, 53);
+            this.cboSpeed1.Name = "cboSpeed1";
+            this.cboSpeed1.Size = new System.Drawing.Size(121, 21);
+            this.cboSpeed1.TabIndex = 3;
             // 
-            // btnConnect
+            // btnSerialConnect1
             // 
-            this.btnConnect.Location = new System.Drawing.Point(478, 27);
-            this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(75, 23);
-            this.btnConnect.TabIndex = 4;
-            this.btnConnect.Text = "Connect";
-            this.btnConnect.UseVisualStyleBackColor = true;
-            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
+            this.btnSerialConnect1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSerialConnect1.Location = new System.Drawing.Point(375, 19);
+            this.btnSerialConnect1.Name = "btnSerialConnect1";
+            this.btnSerialConnect1.Size = new System.Drawing.Size(75, 23);
+            this.btnSerialConnect1.TabIndex = 4;
+            this.btnSerialConnect1.Text = "Connect";
+            this.btnSerialConnect1.UseVisualStyleBackColor = true;
+            this.btnSerialConnect1.Click += new System.EventHandler(this.btnConnect_Click);
             // 
-            // btnClose
+            // btnSerialClose1
             // 
-            this.btnClose.Location = new System.Drawing.Point(596, 27);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 5;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnSerialClose1.Location = new System.Drawing.Point(375, 51);
+            this.btnSerialClose1.Name = "btnSerialClose1";
+            this.btnSerialClose1.Size = new System.Drawing.Size(75, 23);
+            this.btnSerialClose1.TabIndex = 5;
+            this.btnSerialClose1.Text = "Close";
+            this.btnSerialClose1.UseVisualStyleBackColor = true;
+            this.btnSerialClose1.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // txtSendCommand
+            // txtSendCommand1
             // 
-            this.txtSendCommand.Location = new System.Drawing.Point(30, 556);
-            this.txtSendCommand.Name = "txtSendCommand";
-            this.txtSendCommand.Size = new System.Drawing.Size(558, 20);
-            this.txtSendCommand.TabIndex = 6;
+            this.txtSendCommand1.Location = new System.Drawing.Point(30, 556);
+            this.txtSendCommand1.Name = "txtSendCommand1";
+            this.txtSendCommand1.Size = new System.Drawing.Size(389, 20);
+            this.txtSendCommand1.TabIndex = 6;
             // 
-            // btnSend
+            // btnSend1
             // 
-            this.btnSend.Location = new System.Drawing.Point(604, 556);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(67, 20);
-            this.btnSend.TabIndex = 7;
-            this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            this.btnSend1.Location = new System.Drawing.Point(458, 555);
+            this.btnSend1.Name = "btnSend1";
+            this.btnSend1.Size = new System.Drawing.Size(67, 20);
+            this.btnSend1.TabIndex = 7;
+            this.btnSend1.Text = "Send";
+            this.btnSend1.UseVisualStyleBackColor = true;
+            this.btnSend1.Click += new System.EventHandler(this.btnSend_Click);
             // 
-            // txtReceive
+            // txtReceive1
             // 
-            this.txtReceive.Location = new System.Drawing.Point(30, 84);
-            this.txtReceive.Multiline = true;
-            this.txtReceive.Name = "txtReceive";
-            this.txtReceive.ReadOnly = true;
-            this.txtReceive.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtReceive.Size = new System.Drawing.Size(558, 437);
-            this.txtReceive.TabIndex = 8;
+            this.txtReceive1.Location = new System.Drawing.Point(30, 84);
+            this.txtReceive1.Multiline = true;
+            this.txtReceive1.Name = "txtReceive1";
+            this.txtReceive1.ReadOnly = true;
+            this.txtReceive1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtReceive1.Size = new System.Drawing.Size(495, 448);
+            this.txtReceive1.TabIndex = 8;
+            // 
+            // txtReceive2
+            // 
+            this.txtReceive2.Location = new System.Drawing.Point(583, 84);
+            this.txtReceive2.Multiline = true;
+            this.txtReceive2.Name = "txtReceive2";
+            this.txtReceive2.ReadOnly = true;
+            this.txtReceive2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtReceive2.Size = new System.Drawing.Size(495, 448);
+            this.txtReceive2.TabIndex = 9;
+            // 
+            // btnSend2
+            // 
+            this.btnSend2.Location = new System.Drawing.Point(1011, 555);
+            this.btnSend2.Name = "btnSend2";
+            this.btnSend2.Size = new System.Drawing.Size(67, 20);
+            this.btnSend2.TabIndex = 11;
+            this.btnSend2.Text = "Send";
+            this.btnSend2.UseVisualStyleBackColor = true;
+            this.btnSend2.Click += new System.EventHandler(this.btnSend2_Click);
+            // 
+            // txtSendCommand2
+            // 
+            this.txtSendCommand2.Location = new System.Drawing.Point(583, 555);
+            this.txtSendCommand2.Name = "txtSendCommand2";
+            this.txtSendCommand2.Size = new System.Drawing.Size(389, 20);
+            this.txtSendCommand2.TabIndex = 10;
+            // 
+            // btnSerialClose
+            // 
+            this.btnSerialClose.Location = new System.Drawing.Point(933, 51);
+            this.btnSerialClose.Name = "btnSerialClose";
+            this.btnSerialClose.Size = new System.Drawing.Size(75, 23);
+            this.btnSerialClose.TabIndex = 17;
+            this.btnSerialClose.Text = "Close";
+            this.btnSerialClose.UseVisualStyleBackColor = true;
+            this.btnSerialClose.Click += new System.EventHandler(this.btnSerialClose_Click);
+            // 
+            // btnSerialConnect2
+            // 
+            this.btnSerialConnect2.Location = new System.Drawing.Point(933, 19);
+            this.btnSerialConnect2.Name = "btnSerialConnect2";
+            this.btnSerialConnect2.Size = new System.Drawing.Size(75, 23);
+            this.btnSerialConnect2.TabIndex = 16;
+            this.btnSerialConnect2.Text = "Connect";
+            this.btnSerialConnect2.UseVisualStyleBackColor = true;
+            this.btnSerialConnect2.Click += new System.EventHandler(this.btnSerialConnect2_Click);
+            // 
+            // cboSpeed2
+            // 
+            this.cboSpeed2.FormattingEnabled = true;
+            this.cboSpeed2.Location = new System.Drawing.Point(686, 53);
+            this.cboSpeed2.Name = "cboSpeed2";
+            this.cboSpeed2.Size = new System.Drawing.Size(121, 21);
+            this.cboSpeed2.TabIndex = 15;
+            // 
+            // lblSpeed12
+            // 
+            this.lblSpeed12.AutoSize = true;
+            this.lblSpeed12.Location = new System.Drawing.Point(616, 56);
+            this.lblSpeed12.Name = "lblSpeed12";
+            this.lblSpeed12.Size = new System.Drawing.Size(38, 13);
+            this.lblSpeed12.TabIndex = 14;
+            this.lblSpeed12.Text = "Speed";
+            // 
+            // lblSerialPort2
+            // 
+            this.lblSerialPort2.AutoSize = true;
+            this.lblSerialPort2.Location = new System.Drawing.Point(616, 24);
+            this.lblSerialPort2.Name = "lblSerialPort2";
+            this.lblSerialPort2.Size = new System.Drawing.Size(55, 13);
+            this.lblSerialPort2.TabIndex = 13;
+            this.lblSerialPort2.Text = "Serial Port";
+            // 
+            // cboCOMList2
+            // 
+            this.cboCOMList2.FormattingEnabled = true;
+            this.cboCOMList2.Location = new System.Drawing.Point(686, 21);
+            this.cboCOMList2.Name = "cboCOMList2";
+            this.cboCOMList2.Size = new System.Drawing.Size(121, 21);
+            this.cboCOMList2.TabIndex = 12;
             // 
             // frmCOM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 609);
-            this.Controls.Add(this.txtReceive);
-            this.Controls.Add(this.btnSend);
-            this.Controls.Add(this.txtSendCommand);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnConnect);
-            this.Controls.Add(this.cboSpeed);
-            this.Controls.Add(this.lblSpeed);
-            this.Controls.Add(this.lblSerialPort);
-            this.Controls.Add(this.cboCOMlist);
+            this.ClientSize = new System.Drawing.Size(1126, 615);
+            this.Controls.Add(this.btnSerialClose);
+            this.Controls.Add(this.btnSerialConnect2);
+            this.Controls.Add(this.cboSpeed2);
+            this.Controls.Add(this.lblSpeed12);
+            this.Controls.Add(this.lblSerialPort2);
+            this.Controls.Add(this.cboCOMList2);
+            this.Controls.Add(this.btnSend2);
+            this.Controls.Add(this.txtSendCommand2);
+            this.Controls.Add(this.txtReceive2);
+            this.Controls.Add(this.txtReceive1);
+            this.Controls.Add(this.btnSend1);
+            this.Controls.Add(this.txtSendCommand1);
+            this.Controls.Add(this.btnSerialClose1);
+            this.Controls.Add(this.btnSerialConnect1);
+            this.Controls.Add(this.cboSpeed1);
+            this.Controls.Add(this.lblSpeed1);
+            this.Controls.Add(this.lblSerialPort1);
+            this.Controls.Add(this.cboCOMList1);
             this.Name = "frmCOM";
             this.Text = "COM";
             this.ResumeLayout(false);
@@ -145,15 +248,25 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cboCOMlist;
-        private System.IO.Ports.SerialPort COMserialPort;
-        private System.Windows.Forms.Label lblSerialPort;
-        private System.Windows.Forms.Label lblSpeed;
-        private System.Windows.Forms.ComboBox cboSpeed;
-        private System.Windows.Forms.Button btnConnect;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.TextBox txtSendCommand;
-        private System.Windows.Forms.Button btnSend;
-        private System.Windows.Forms.TextBox txtReceive;
+        private System.Windows.Forms.ComboBox cboCOMList1;
+        private System.IO.Ports.SerialPort COMSerialPort1;
+        private System.Windows.Forms.Label lblSerialPort1;
+        private System.Windows.Forms.Label lblSpeed1;
+        private System.Windows.Forms.ComboBox cboSpeed1;
+        private System.Windows.Forms.Button btnSerialConnect1;
+        private System.Windows.Forms.Button btnSerialClose1;
+        private System.Windows.Forms.TextBox txtSendCommand1;
+        private System.Windows.Forms.Button btnSend1;
+        private System.Windows.Forms.TextBox txtReceive1;
+        private System.Windows.Forms.TextBox txtReceive2;
+        private System.Windows.Forms.Button btnSend2;
+        private System.Windows.Forms.TextBox txtSendCommand2;
+        private System.Windows.Forms.Button btnSerialClose;
+        private System.Windows.Forms.Button btnSerialConnect2;
+        private System.Windows.Forms.ComboBox cboSpeed2;
+        private System.Windows.Forms.Label lblSpeed12;
+        private System.Windows.Forms.Label lblSerialPort2;
+        private System.Windows.Forms.ComboBox cboCOMList2;
+        private System.IO.Ports.SerialPort COMSerialPort2;
     }
 }
